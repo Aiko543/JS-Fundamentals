@@ -1,12 +1,6 @@
-const arg1 = process.argv[2];
-const arg2 = process.argv[3];
+const process = require('process');
 
-if (arg1 && arg2) {
-  console.log('${arg1} is ${arg2}');
-} else if (arg1) {
-  console.log('${arg1} is undefined');
-} else {
-  console.log('undefined is undefined');
-}
+const firstArgv = process.argv[2];
+const secondArgv =process.argv[3]
 
-
+console.log('${firstArgv}, 'is', ${secondArgv}');
